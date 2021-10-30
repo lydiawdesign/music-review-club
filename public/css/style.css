@@ -1,0 +1,30 @@
+/* general styling */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* css variables */
+:root{
+    --accentColor:#4dd0e1;
+    --lightColor: white;
+    --darkColor: #212121;
+ 
+    --accentFont: 'Lobster', cursive;
+    --mainFont: arial, sans-serif;
+}
+
+#header {
+    font-family: var(--accentFont);
+    color: var(--lightColor);
+}
+
+#navbar {
+    background-color: var(--accentColor);
+}
+
+nav.div.ul.li {
+    font-family: var(--mainFont);
+    color: var(--lightColor);
+}
