@@ -1,0 +1,30 @@
+[
+    {
+      "artistName": "Justin Beiber",
+      "songTitle": "One Time",
+      "genre": "Pop",
+      "youtubeUrl": "xxxx",
+      "review": "He seems like a nice person"
+    },
+    {
+      "artistName": "Aqua",
+      "songTitle": "Barbie Girl",
+      "genre": "Pop",
+      "youtubeUrl": "xxxx",
+      "review": "This song hits different"
+    },
+    {
+      "artistName": "Childish Gambino",
+      "songTitle": "Freaks and Geeks",
+      "genre": "Rap",
+      "youtubeUrl": "xxxx",
+      "review": "This is the first song I heard of him"
+    },
+    {
+      "artistName": "Michael Jackson",
+      "songTitle": "Remember the time",
+      "genre": "Pop",
+      "youtubeUrl": "xxxx",
+      "review": "Oh I remember"
+    }
+]
