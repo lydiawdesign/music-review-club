@@ -31,7 +31,7 @@ Post.init(
       type: DataTypes.TEXT,
       allowNull: false
     },
-    date_created: {
+    post_timestamp: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW

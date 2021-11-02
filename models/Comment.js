@@ -29,6 +29,11 @@ Comment.init(
           key: 'id',
         },
       },
+      comment_timestamp: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW
+      },
 
     },
     {
