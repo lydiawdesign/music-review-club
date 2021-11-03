@@ -29,7 +29,7 @@ Comment.init(
           key: 'id',
         },
       },
-      comment_timestamp: {
+      commentTimestamp: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW
