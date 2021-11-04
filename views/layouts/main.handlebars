@@ -5,11 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Review Club!</title>
-  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-</body>
+ <div class="container">
+   <header>
+      <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar">
+        <a class="navbar-brand">
+          <span class="hidden fw-bold fs-1 ps-5" id="header">Music Review Club</span>
+        </a>
+
+        <button 
+            class="navbar-toggler pe-4" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#toggleMobileMenu" 
+            aria-controls="toggleMobileMenu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+         </button>
+
+        <div class="collapse navbar-collapse pe-4" id="toggleMobileMenu">
+        
+          <ul class="navbar-nav ms-auto text-center">
+            <li>
+              <a class="nav-link fw-bold text-uppercase">Feed</a>
+            </li>
+            <li>
+              <a class="nav-link fw-bold text-uppercase">New Post</a>
+            </li>
+            {{#if logged_in}}
+            <li>
+              <a class="nav-link fw-bold text-uppercase">Logout</a>
+            </li>
+            {{#else }}
+            <li>
+              <a class="nav-link fw-bold text-uppercase">Log In</a>
+            </li>
+            {{/if}}
+                
+          </ul>
+        </div>
+      </nav>
+  
+    </header>
+    
+    <main class="container container-fluid mt-5">
+      {{{ body }}}
+    </main>
+    <footer>
+        
+    </footer>
+
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
+  </body>
 
 </html>
