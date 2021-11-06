@@ -1,10 +1,11 @@
 // Dependencies
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Comment, Post, User } = require('../models')
+const { Comment, Post, User } = require('../models');
+const withAuth = require('../utils/auth');
 
 // Render the home page (showing all reviews from all users)
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Post.findAll({
         attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
         include: [
@@ -60,6 +61,7 @@ router.get('post/:id', (req,res) => {
         res.render('single-post', {
             posts,
             loggedIn: req.session.loggedIn
+            // loggedIn: false
         })
     })
 });
