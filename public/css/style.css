@@ -58,3 +58,44 @@ nav.div.ul.li {
 .box4 {
     padding-top: 10%;
 }
+
+main {
+    background-color: var(--darkColor);
+}
+
+.card{
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(192, 193, 204, 0.2);
+    margin: 2em;
+}
+
+.card-title {
+    border-width: 1em;
+    background-color: var(--accentColor);
+    
+}
+
+button {
+    position: relative;
+    float: right;
+    color: white;
+    margin-right: 20px;
+}
+
+button:hover {
+    opacity: 1;  
+}
+
+.btn1 {
+    background-color: var(--accentColor);
+}
+
+.btn2{
+    background-color: var(--darkColor);
+}
+
+
+li{
+    list-style-type: none;
+}
