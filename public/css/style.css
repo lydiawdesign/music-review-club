@@ -63,18 +63,27 @@ main {
     background-color: var(--darkColor);
 }
 
-.card{
-    padding: 1.5em .5em .5em;
-    border-radius: 2em;
+.box5{
     box-shadow: 0 5px 10px rgba(192, 193, 204, 0.2);
+    margin: 1em;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.card {
     margin: 2em;
+    padding: 5%;
 }
 
 .card-title {
-    border-width: 1em;
     background-color: var(--accentColor);
-    
+    font-family: var(--accentFont);
+    color: var(--lightColor);
 }
+
+.card.h3.ul.li.p{
+    font-family: var(--mainFont);
+} 
 
 button {
     position: relative;
