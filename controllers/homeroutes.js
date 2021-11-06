@@ -6,7 +6,7 @@ const { Comment, Post, User } = require('../models')
 // Render the home page (showing all reviews from all users)
 router.get('/', (req, res) => {
     Post.findAll({
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp'],
+        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
         include: [
             {
                 model: User,
@@ -40,7 +40,7 @@ router.get('post/:id', (req,res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp'],
+        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
         include: [
             {
             model: User,
