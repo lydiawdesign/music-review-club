@@ -1,0 +1,60 @@
+/* general styling */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* css variables */
+:root{
+    --accentColor:#4dd0e1;
+    --lightColor: white;
+    --darkColor: #212121;
+ 
+    --accentFont: 'Lobster', cursive;
+    --mainFont: arial, Helvetica, sans-serif;
+}
+
+#header {
+    font-family: var(--accentFont);
+    color: var(--lightColor);
+}
+
+#navbar {
+    background-color: var(--accentColor);
+}
+
+nav.div.ul.li {
+    font-family: var(--mainFont);
+    color: var(--lightColor);
+}
+
+.headerTitle {
+    font-family: var(--accentFont);
+}
+
+.box {
+    background-color: lightslategray;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.box2{
+    padding: 5%;
+    background-color: var(--darkColor);
+}
+.box3{
+    padding-top: 10%;
+}
+
+#background {
+    background-color: var(--darkColor);
+}
+
+.accentText {
+    font-family: var(--accentFont);
+}
+
+.box4 {
+    padding-top: 10%;
+}
