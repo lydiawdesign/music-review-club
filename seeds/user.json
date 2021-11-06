@@ -1,17 +1,21 @@
 [
     {
+        "realName": "Shawn",
         "username": "shawnsmm",
         "password": "password1234"
     },
     {
+        "realName": "Lydia",
         "username": "lydiawdesign",
         "password": "1234password"
     },
     {
+        "realName": "Kerrius",
         "username": "kerrius",
         "password": "ShakeandBake"
     },
     {
+        "realName": "Michael",
         "username": "footballday",
         "password": "mariomario"
     }
