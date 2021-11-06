@@ -12,7 +12,7 @@
     --darkColor: #212121;
  
     --accentFont: 'Lobster', cursive;
-    --mainFont: arial, sans-serif;
+    --mainFont: arial, Helvetica, sans-serif;
 }
 
 #header {
@@ -27,4 +27,34 @@
 nav.div.ul.li {
     font-family: var(--mainFont);
     color: var(--lightColor);
+}
+
+.headerTitle {
+    font-family: var(--accentFont);
+}
+
+.box {
+    background-color: lightslategray;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.box2{
+    padding: 5%;
+    background-color: var(--darkColor);
+}
+.box3{
+    padding-top: 10%;
+}
+
+#background {
+    background-color: var(--darkColor);
+}
+
+.accentText {
+    font-family: var(--accentFont);
+}
+
+.box4 {
+    padding-top: 10%;
 }
