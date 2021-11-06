@@ -36,7 +36,7 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW
     },
-    UserId: {
+    userId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
