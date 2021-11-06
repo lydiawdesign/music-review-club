@@ -36,6 +36,13 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW
     },
+    UserId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
