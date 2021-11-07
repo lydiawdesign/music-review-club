@@ -1,17 +1,17 @@
 {{> post singlePost}}
-
-{{#each singlePost.comments as |comment|}}
-<div>{{> comment}}</div>
+<div>I am here!!!</div>
+{{#each singlePost.comments}}
+<div>{{> comment singlePost}}</div>
 {{/each}}
 
 <form class="container-fluid box5 card">
     
     <div class="comment-card-header">
-        <textarea name="comment-body"></textarea>    
+        <textarea name="comment-body" id="commentBody"></textarea>    
     </div>
 
     <div>
-        <button type="submit">Submit comment</button>
+        <button type="submit" class="newComment">Submit comment</button>
     </div>            
 
 </form>

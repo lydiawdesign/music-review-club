@@ -6,6 +6,11 @@
     },
     {
       "userId": 2,
+      "comment": "Great song!",
+      "postId": 1
+    },
+    {
+      "userId": 2,
       "comment": "Best song ever!!!",
       "postId": 2
     },
