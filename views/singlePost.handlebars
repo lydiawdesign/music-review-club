@@ -1,0 +1,21 @@
+{{> review}}
+
+{{#if logged_in}}
+<form class="post">
+    
+    <div class="comment-card-header">
+        <textarea name="comment-body"></textarea>    
+    </div>
+
+    <div>
+        <button type="submit">Submit comment</button>
+    </div>            
+
+</form>
+{{/if}}
+
+{{> comment posting.comment}}
+
+{{#if logged_in}}
+<script src='/js/comment.js'><</script>
+{{/if}}
