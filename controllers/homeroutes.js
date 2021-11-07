@@ -40,16 +40,16 @@ router.get('/', withAuth, (req, res) => {
 });
 
 // Render single review
-router.get('post/:id', (req,res) => {
+router.get('/post/:id', (req,res) => {
     Post.findOne({
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
+        attributes: ['id', 'artistName', 'songTitle', 'genre', 'youtubeUrl', 'review', 'postTimestamp', 'userId'],
         include: [
             {
             model: User,
-            attributes: ['realName' , 'username']
+            attributes: ['realName', 'username']
             },
             {
             model: Comment,
@@ -60,10 +60,10 @@ router.get('post/:id', (req,res) => {
                 }
             }
         ]   
-    }).then (dpPostData => {
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('single-post', {
-            posts,
+    }).then (dbPostData => {
+        const singlePost = dbPostData.get({ plain: true });
+        res.render('singlePost', {
+            singlePost,
             loggedIn: req.session.loggedIn
             // loggedIn: false
         })

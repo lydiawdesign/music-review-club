@@ -1,15 +1,16 @@
 <row class="container-fluid box5 card">
-        <h2 class="card-title"><a href="/post/{{id}}">{{user.realName}}</a></h2>
-        <p class="meta">{{formatDate postTimestamp}}</p>
-          
-          <ul>
-              <li><b>Artist:</b> {{artistName}}</li>
-              <li><b>Song Title:</b> {{songTitle}}</li>
-              <li><b>Genre:</b> {{genre}}</li>
-              <li><a href="{{youtubeUrl}}"><b>Youtube URL:</b> {{youtubeUrl}}</a></li>
-          </ul>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <div class="text-center"> 
-            <button class="btn2">Add Comment</button>
-        </div>
+    <h2 class="card-title removeHref">{{user.realName}}</a></h2>
+    <p class="meta">{{formatDate postTimestamp}}</p>
+      
+      <ul>
+        <li><b>Artist:</b> {{artistName}}</li>
+        <li><b>Song Title:</b> {{songTitle}}</li>
+        <li><b>Genre:</b> {{genre}}</li>
+        <li><b>Youtube URL:</b><a href="{{youtubeUrl}}"></a> {{youtubeUrl}}</a></li>
+        <li><b>Review:</b> {{review}}</li>
+      </ul>
+
+      <div>
+          <a type="submit" class="btn btn-md btn-info" value="View" <a href="/post/{{id}}"> View Review</a>
+      </div>
 </row> 
