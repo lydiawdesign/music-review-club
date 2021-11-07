@@ -62,16 +62,18 @@ router.get('/post/:id', (req,res) => {
         ]   
     }).then (dbPostData => {
         const singlePost = dbPostData.get({ plain: true });
+        console.log(singlePost);
         res.render('singlePost', {
             singlePost,
             loggedIn: req.session.loggedIn
-            // loggedIn: false
         })
     })
 });
 
 router.get('/newpost', (req, res) => {
-    res.render('newPost');
+    res.render('newPost', {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 // Render login screen

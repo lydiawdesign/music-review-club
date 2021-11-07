@@ -123,3 +123,38 @@ li{
 .removeHref{
     text-decoration: none;
 }
+
+.link {
+	text-decoration: none;
+	color:white;
+}
+
+.link:hover{
+    color: white;
+}
+/* .title-animate{
+
+    width: 100px;
+    height: 100px;
+    color: red;
+    position: relative;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+  }
+  
+  @keyframes test {
+
+    0%   {color:red;}
+    10%  {color: orange;}
+    20%  {color:yellow;}
+    30%  {color:yellowgreen;}
+    40%  {color:green;}
+    50% {color:blue;}
+    60% {color:indigo;}
+    70% {color:violet;}
+    80% {color:purple;}
+    90% {color:pink;}
+    100% {color:palevioletred;}
+
+} */

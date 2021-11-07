@@ -20,7 +20,7 @@
    <header>
       <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar">
         <a class="navbar-brand">
-          <span class="hidden fw-bold fs-1 ps-5" id="header">Music Review Club</span>
+          <span class="hidden fw-bold fs-1 ps-5 title-animate" id="header">Music Review Club</span>
         </a>
 
         <button 
@@ -40,10 +40,10 @@
           <ul class="navbar-nav ms-auto text-center">
             {{#if loggedIn}}
             <li>
-              <button class="nav-link fw-bold text-uppercase text-white buttonStyle">Feed</button>
+              <button class="nav-link fw-bold text-uppercase text-white buttonStyle" ><a href="/" class="link">Feed</button>
             </li>
             <li>
-              <button class="nav-link fw-bold text-uppercase text-white buttonStyle" id="newpost"><a href="/newpost"> New Post</a></button>
+              <button class="nav-link fw-bold text-uppercase text-white buttonStyle" id="newpost"><a href="/newpost" class="link">New Post</a></button>
             </li>
             <li>
               <button class="nav-link fw-bold text-uppercase text-white buttonStyle" id="logout">Logout</button>
