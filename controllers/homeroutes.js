@@ -7,7 +7,7 @@ const withAuth = require('../utils/auth');
 // Render the home page (showing all reviews from all users)
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
+        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'postTimestamp', 'userId'],
         include: [
             {
                 model: User,

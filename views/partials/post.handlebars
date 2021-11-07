@@ -2,10 +2,9 @@
    <div class="container box5">
     <div class="card" style="width: 85%;">
       <div class="card-body">
-        <h2 class="card-title"> {{realName}} </h2>
-        <p class="meta">Nov 6th, 2021 6:54 PM</p>
-        <p>
-        <h3>
+        <h2 class="card-title"><a href="/post/{{id}}">{{username.realName}}</a></h2>
+        <p class="meta">{{post.commentTimestamp}}</p>
+          
           <ul>
               <li><b>Artist:</b> {{artistName}}</li>
               <li><b>Song Title:</b> {{songTitle}}</li>
@@ -16,7 +15,7 @@
         <div class="text-center"> 
             <button class="btn2">Add Comment</button>
         </div>
-        
+        <div>     
       </div>
     </div>
 </row> 

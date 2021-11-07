@@ -1,6 +1,9 @@
-{{> review}}
+{{> post posting}}
 
-{{#if logged_in}}
+{{#each comments as |comment|}}
+<div>{{> comment}}</div>
+{{/each}}
+
 <form class="post">
     
     <div class="comment-card-header">
@@ -12,10 +15,5 @@
     </div>            
 
 </form>
-{{/if}}
 
-{{> comment posting.comment}}
-
-{{#if logged_in}}
-<script src='/js/comment.js'><</script>
-{{/if}}
+<script src='/js/comment.js'></script>
