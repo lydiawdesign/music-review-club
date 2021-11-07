@@ -1,8 +1,11 @@
 // Dependencies
 const router = require('express').Router();
+const route = require('color-convert/route');
 const sequelize = require('../config/connection');
 const { Comment, Post, User } = require('../models');
 const withAuth = require('../utils/auth');
+// const formatDate = require('../utils/helpers');
+
 
 // Render the home page (showing all reviews from all users)
 router.get('/', withAuth, (req, res) => {
@@ -24,6 +27,7 @@ router.get('/', withAuth, (req, res) => {
         ]
     }).then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
+        console.log(posts);
         res.render('feed', {
            posts,
            loggedIn: req.session.loggedIn         
@@ -64,6 +68,10 @@ router.get('post/:id', (req,res) => {
             // loggedIn: false
         })
     })
+});
+
+router.get('/newpost', (req, res) => {
+    res.render('newPost');
 });
 
 // Render login screen

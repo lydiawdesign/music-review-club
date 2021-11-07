@@ -1,9 +1,6 @@
-<row class="container-fluid">
-   <div class="container box5">
-    <div class="card" style="width: 85%;">
-      <div class="card-body">
-        <h2 class="card-title"><a href="/post/{{id}}">{{username.realName}}</a></h2>
-        <p class="meta">{{post.commentTimestamp}}</p>
+<row class="container-fluid box5 card">
+        <h2 class="card-title"><a href="/post/{{id}}">{{user.realName}}</a></h2>
+        <p class="meta">{{formatDate postTimestamp}}</p>
           
           <ul>
               <li><b>Artist:</b> {{artistName}}</li>
@@ -15,7 +12,4 @@
         <div class="text-center"> 
             <button class="btn2">Add Comment</button>
         </div>
-        <div>     
-      </div>
-    </div>
 </row> 
