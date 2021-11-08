@@ -132,7 +132,7 @@ li{
 .link:hover{
     color: white;
 }
-/* .title-animate{
+.title-animate{
 
     width: 100px;
     height: 100px;
@@ -157,4 +157,4 @@ li{
     90% {color:pink;}
     100% {color:palevioletred;}
 
-} */
+}
