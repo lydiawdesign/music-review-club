@@ -11,6 +11,9 @@
       </ul>
 
       <div>
-          <a type="submit" class="btn btn-md btn-info" value="View" <a href="/post/{{id}}"> View Review</a>
+          <a type="submit" class="btn btn-md btn-info" value="View" href="/post/{{id}}"> View Review</a>
       </div>
+{{#each comments}}
+{{> comment this}}
+{{/each}}
 </row> 
