@@ -10,10 +10,13 @@
         <li><b>Review:</b> {{review}}</li>
       </ul>
 
-      <div>
-          <a type="submit" class="btn btn-md btn-info" value="View" href="/post/{{id}}"> View Review</a>
-      </div>
+      
 {{#each comments}}
 {{> comment this}}
 {{/each}}
+
+  <div>
+    <a type="submit" class="btn btn-md btn-info text-align-center" value="View" href="/post/{{id}}">View Post</a>
+  </div>
 </row> 
+

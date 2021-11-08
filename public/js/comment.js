@@ -4,6 +4,9 @@ console.log (this);
 
   const comment = document.querySelector('#commentBody').value.trim();
   // const postId = document.querySelector('#commentSubmit').value.trim();
+  const postId = window.location.toString().split('/')[window.location.toString().split('/').length - 1];
+  
+
 
 
   if (comment && postId) { 
@@ -16,7 +19,7 @@ console.log (this);
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace(`/post/${postId}`);
     } else {
       alert('Failed to post comment');
     }
