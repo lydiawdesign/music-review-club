@@ -1,12 +1,16 @@
 // Dependencies
 const router = require('express').Router();
+const route = require('color-convert/route');
 const sequelize = require('../config/connection');
-const { Comment, Post, User } = require('../models')
+const { Comment, Post, User } = require('../models');
+const withAuth = require('../utils/auth');
+// const formatDate = require('../utils/helpers');
+
 
 // Render the home page (showing all reviews from all users)
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Post.findAll({
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
+        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'postTimestamp', 'userId'],
         include: [
             {
                 model: User,
@@ -23,7 +27,8 @@ router.get('/', (req, res) => {
         ]
     }).then(dbPostData => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('homepage', {
+        console.log(posts);
+        res.render('feed', {
            posts,
            loggedIn: req.session.loggedIn         
         })
@@ -35,33 +40,40 @@ router.get('/', (req, res) => {
 });
 
 // Render single review
-router.get('post/:id', (req,res) => {
+router.get('/post/:id', (req,res) => {
     Post.findOne({
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'artistName', 'songTitle', 'songTitle', 'genre', 'youtubeUrl', 'review', 'post_timestamp', 'userId'],
+        attributes: ['id', 'artistName', 'songTitle', 'genre', 'youtubeUrl', 'review', 'postTimestamp', 'userId'],
         include: [
             {
             model: User,
-            attributes: ['realName' , 'username']
+            attributes: ['realName', 'username']
             },
             {
             model: Comment,
             attributes: ['id', 'userId', 'comment', 'postId', 'commentTimestamp'],
             include: {
                 model: User,
-                attributes: ['username']
+                attributes: ['realName', 'username']
                 }
             }
         ]   
-    }).then (dpPostData => {
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('single-post', {
-            posts,
+    }).then (dbPostData => {
+        const singlePost = dbPostData.get({ plain: true });
+        console.log(singlePost);
+        res.render('singlePost', {
+            singlePost,
             loggedIn: req.session.loggedIn
         })
     })
+});
+
+router.get('/newpost', (req, res) => {
+    res.render('newPost', {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 // Render login screen

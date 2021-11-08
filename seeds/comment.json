@@ -1,22 +1,27 @@
 [
     {
-      "userId": "1",
+      "userId": 1,
       "comment": "I can't stand this artist, but my wife likes his songs",
-      "postID": 1
+      "postId": 1
+    },
+    {
+      "userId": 2,
+      "comment": "Great song!",
+      "postId": 1
     },
     {
       "userId": 2,
       "comment": "Best song ever!!!",
-      "postID": 2
+      "postId": 2
     },
     {
       "userId": 3,
       "comment": "This is a nice song, first time I heard it.",
-      "postID": 3
+      "postId": 3
     },
     {
       "userId": 4,
       "comment": "I like it Michael Jackson.",
-      "postID": 4
+      "postId": 4
     }
   ]

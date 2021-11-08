@@ -1,0 +1,18 @@
+{{> post singlePost}}
+{{!-- {{#each singlePost.comments}}
+{{> comment this}}
+{{/each}} --}}
+
+<form class="container-fluid box5 card newComment">
+    
+    <div class="comment-card-header">
+        <textarea id="commentBody" placeholder="Add your comment.." class="w-100"></textarea>    
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-md btn-info input-lg align-self-start">Post Comment</button>
+    </div>            
+
+</form>
+
+<script src='/js/comment.js'></script>

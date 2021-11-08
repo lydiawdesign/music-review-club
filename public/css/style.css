@@ -58,3 +58,105 @@ nav.div.ul.li {
 .box4 {
     padding-top: 10%;
 }
+
+/* navbar button styling */
+.buttonStyle {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+main {
+    background-color: var(--darkColor);
+}
+
+.box5{
+    box-shadow: 0 5px 10px rgba(192, 193, 204, 0.2);
+    margin: 1em;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.card {
+    margin: 2em;
+    padding: 5%;
+}
+
+.card-title {
+    background-color: var(--accentColor);
+    font-family: var(--accentFont);
+    color: var(--lightColor);
+}
+
+.card.h3.ul.li.p{
+    font-family: var(--mainFont);
+} 
+
+button {
+    position: relative;
+    float: right;
+    color: white;
+    margin-right: 20px;
+}
+
+button:hover {
+    opacity: 1;  
+}
+
+.btn1 {
+    background-color: var(--accentColor);
+}
+
+.btn2{
+    background-color: var(--darkColor);
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.removeHref{
+    text-decoration: none;
+}
+
+.link {
+	text-decoration: none;
+	color:white;
+}
+
+.link:hover{
+    color: white;
+}
+.title-animate{
+
+    width: 100px;
+    height: 100px;
+    color: red;
+    position: relative;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+  }
+  
+  @keyframes test {
+
+    0%   {color:red;}
+    10%  {color: orange;}
+    20%  {color:yellow;}
+    30%  {color:yellowgreen;}
+    40%  {color:green;}
+    50% {color:blue;}
+    60% {color:indigo;}
+    70% {color:violet;}
+    80% {color:purple;}
+    90% {color:pink;}
+    100% {color:palevioletred;}
+
+}
+
+/* comment styling */
