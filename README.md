@@ -6,16 +6,17 @@ GitHub: https://github.com/lydiawdesign/music-review-club
 
 # Table of Contents
 * [Description](#Description)
+* [UserStory](#UserStory)
 * [Installation](#Installation)
 * [Technologies](#Technologies)
-* [Appearance](#Appearance)
+* [Screenshots](#Screenshots)
 * [Bugs](#Bugs)
 * [Contact-Info](#Contact-Info)
 
 # Description
 A website that specializes in building a music loving community. Community members are able to post new song reviews (including song title, artist name, genre, youtube URL, and review). Users are also able to view other users reviews on the feed. All users are able to interact with music reviews once logged in. 
 
-# User Story
+# UserStory
 AS A Music Review Club user
 I WANT to login to this application to be able to view the feed and add music reviews 
 SO THAT other users are able to add comments and see my reviews.
@@ -39,14 +40,12 @@ Install npm, squelize, mysql2, express, bycrpt, and express to run locally.
 # Screenshots
 
 
-# Bugs
-
 
 # Contact-Info
 
 Lydia Williamson - lydiawdesign@gmail.com
 Shawn Miller - shawnsmm@gmail.com
-Kerrius Williams -
+Kerrius Williams - kerriusw2326@gmail.com
 Michael Jenkins - mdjenkins655@gmail.com
 
 Copyright (c) 2021 
