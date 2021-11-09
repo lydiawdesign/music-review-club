@@ -38,6 +38,15 @@ Install npm, squelize, mysql2, express, bycrpt, and express to run locally.
 - Heroku
 
 # Screenshots
+Homepage
+![image](https://user-images.githubusercontent.com/87274229/141022785-6fe17287-2883-4e3a-bff5-50fd73a9fe39.png)
+
+New Post
+![image](https://user-images.githubusercontent.com/87274229/141022986-866d5882-00fa-46cf-870e-3d81167bbbfa.png)
+
+Feed
+
+Comments
 
 
 
