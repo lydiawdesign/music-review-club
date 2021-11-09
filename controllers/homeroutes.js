@@ -1,6 +1,5 @@
 // Dependencies
 const router = require('express').Router();
-const route = require('color-convert/route');
 const sequelize = require('../config/connection');
 const { Comment, Post, User } = require('../models');
 const withAuth = require('../utils/auth');
