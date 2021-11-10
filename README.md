@@ -1,7 +1,7 @@
 # Music Review Club
 
 # Links 
-Heroku: https://music-review-club.herokuapp.com/
+Heroku: https://music-review-club.herokuapp.com/ <br> 
 GitHub: https://github.com/lydiawdesign/music-review-club
 
 # Table of Contents
@@ -53,10 +53,10 @@ Comments
 
 # Contact-Info
 
-Lydia Williamson - lydiawdesign@gmail.com
-Shawn Miller - shawnsmm@gmail.com
-Kerrius Williams - kerriusw2326@gmail.com
-Michael Jenkins - mdjenkins655@gmail.com
+Lydia Williamson - lydiawdesign@gmail.com <br> 
+Shawn Miller - shawnsmm@gmail.com <br> 
+Kerrius Williams - kerriusw2326@gmail.com <br> 
+Michael Jenkins - mdjenkins655@gmail.com <br> 
 
 Copyright (c) 2021 
 
